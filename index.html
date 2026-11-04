@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find music, sound effects, images, GIFs, overlays, LUTs, templates and fonts for your video edits.">
+  <meta name="theme-color" content="#101410">
+  <title>EDITVAULT — Find your next editing asset</title>
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem("editvault-theme") || "dark"; } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="EDITVAULT home"><span class="brand-mark">E</span><span>EDIT<span class="brand-accent">VAULT</span></span></a>
+    <div class="top-actions">
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false">☰</button>
+      <button class="button theme-toggle" type="button" data-theme-toggle>☀ Light mode</button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-heading">WORKSPACE</div>
+      <nav data-nav aria-label="Main navigation"></nav>
+      <div class="sidebar-note">
+        <span class="status-dot"></span>
+        <div><strong>Free resource finder</strong><small>One search. Multiple sources.</small></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> THE EDITOR'S RESOURCE HUB</span>
+          <h1>Find the right asset.<br><span class="gradient-text">Keep your flow.</span></h1>
+          <p class="hero-description">Discover music, sound effects, visuals and editing resources from multiple places — without breaking your creative rhythm.</p>
+          <form class="search-box hero-search" data-search-form data-category="all">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input type="search" name="q" placeholder="Try “cinematic whoosh”, “lofi beat”, “neon city”..." aria-label="Search all resources" minlength="2" required>
+            <button class="button primary search-submit" type="submit">Search <span aria-hidden="true">↗</span></button>
+          </form>
+          <div class="search-hint"><span>Popular searches</span><button type="button" class="text-chip" data-query="cinematic background">Cinematic</button><button type="button" class="text-chip" data-query="whoosh transition">Whoosh SFX</button><button type="button" class="text-chip" data-query="abstract background">Abstract</button></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="hero-tile tile-main"><span class="tile-symbol">✳</span><span class="tile-caption">CREATIVE<br>LIBRARY</span><span class="tile-bars"><i></i><i></i><i></i><i></i><i></i></span></div>
+          <div class="hero-tile tile-small tile-a">♫</div>
+          <div class="hero-tile tile-small tile-b">✦</div>
+          <div class="hero-tile tile-small tile-c">▧</div>
+          <div class="hero-glow"></div>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading"><div><span class="eyebrow">BROWSE THE LIBRARY</span><h2>What are you looking for?</h2></div><span class="section-count">09 CATEGORIES</span></div>
+        <div class="category-grid">
+          <a class="category-card category-music" href="pages/music.html"><span class="category-icon">♫</span><span class="category-meta">AUDIO</span><strong>Music</strong><small>Background tracks & beats</small><span class="card-arrow">↗</span></a>
+          <a class="category-card category-sfx" href="pages/sfx.html"><span class="category-icon">◖))</span><span class="category-meta">AUDIO</span><strong>Sound effects</strong><small>Impacts, whooshes & ambience</small><span class="card-arrow">↗</span></a>
+          <a class="category-card category-images" href="pages/images.html"><span class="category-icon">▧</span><span class="category-meta">VISUALS</span><strong>Images</strong><small>Photos & backgrounds</small><span class="card-arrow">↗</span></a>
+          <a class="category-card category-gifs" href="pages/gifs.html"><span class="category-icon">GIF</span><span class="category-meta">VISUALS</span><strong>GIFs</strong><small>Motion & reactions</small><span class="card-arrow">↗</span></a>
+          <a class="category-card category-overlays" href="pages/overlays.html"><span class="category-icon">▦</span><span class="category-meta">EFFECTS</span><strong>Overlays</strong><small>Textures & visual effects</small><span class="card-arrow">↗</span></a>
+          <a class="category-card category-luts" href="pages/luts.html"><span class="category-icon">◒</span><span class="category-meta">EFFECTS</span><strong>LUTs & color</strong><small>Looks & color grading</small><span class="card-arrow">↗</span></a>
+          <a class="category-card category-templates" href="pages/templates.html"><span class="category-icon">▤</span><span class="category-meta">PROJECTS</span><strong>Templates</strong><small>Ready-made editing projects</small><span class="card-arrow">↗</span></a>
+          <a class="category-card category-fonts" href="pages/fonts.html"><span class="category-icon">Aa</span><span class="category-meta">DESIGN</span><strong>Fonts</strong><small>Type for titles & captions</small><span class="card-arrow">↗</span></a>
+          <a class="category-card category-saved" href="pages/saved.html"><span class="category-icon">♡</span><span class="category-meta">YOUR SPACE</span><strong>Saved assets</strong><small>Your personal shortlist</small><span class="card-arrow">↗</span></a>
+        </div>
+      </section>
+
+      <section class="how-section">
+        <div><span class="eyebrow">MADE FOR YOUR WORKFLOW</span><h2>Less searching.<br><span class="gradient-text">More creating.</span></h2></div>
+        <div class="how-steps">
+          <article><span>01</span><div><strong>Search once</strong><p>Enter what you need and choose a resource category.</p></div></article>
+          <article><span>02</span><div><strong>Explore sources</strong><p>Compare results from supported providers and open the original source.</p></div></article>
+          <article><span>03</span><div><strong>Keep what you like</strong><p>Save useful finds to your local shortlist. Account sync comes in a later phase.</p></div></article>
+        </div>
+      </section>
+
+      <section class="results-section" data-home-results hidden>
+        <div class="section-heading"><div><span class="eyebrow">SEARCH RESULTS</span><h2>Found for your search</h2></div><button class="button quiet" type="button" data-clear-results>Clear results</button></div>
+        <div class="results-grid" data-results aria-live="polite"></div>
+      </section>
+
+      <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">E</span><span>EDIT<span class="brand-accent">VAULT</span></span></a><p>Find resources. Respect creators. Keep creating.</p><span>© EDITVAULT · Free to explore</span></footer>
+    </main>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
